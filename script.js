@@ -70,3 +70,28 @@ const drawArcs = (canvas, ctx) => {
 };
 
 drawArcs(canvasArcs, ctxArcs);
+
+// --- Carousel ---
+const carouselImages = document.querySelectorAll('.carousel-image');
+let currentImageIndex = 0;
+
+function showImage(index) {
+  carouselImages.forEach((image, i) => {
+    if (i === index) {
+      image.style.display = 'block'; // Or 'inline-block', etc. depending on your layout
+    } else {
+      image.style.display = 'none';
+    }
+  });
+}
+
+function nextImage() {
+  currentImageIndex = (currentImageIndex + 1) % carouselImages.length;
+  showImage(currentImageIndex);
+}
+
+// Initial display
+showImage(currentImageIndex);
+
+// Automatic slideshow (optional)
+setInterval(nextImage, 3000); // Change 3000 (milliseconds) to your desired interval
