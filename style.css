@@ -9,7 +9,8 @@
   }
 
   .sketch{
-    height: 800px;
+    height: auto;
+    max-height: 800px ;
     overflow: hidden;
   }
   
@@ -48,6 +49,7 @@
   .content {
     margin-left: 60px;
     padding-left: 10px;
+    overflow: hidden;
   }
 
   /* Carousel */
@@ -70,3 +72,4 @@ display: block;
 width: 100%;
 height: auto; /* Or a specific height if you want a fixed size carousel */
 }
+
