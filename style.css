@@ -9,7 +9,7 @@
   }
 
   .sketch{
-    height: 1080px;
+    height: 800px;
     overflow: hidden;
   }
   
@@ -61,8 +61,7 @@
 .carousel-image {
   width: auto;
   margin-left: 0;
-  margin-top: 0;
-  height: 1080px; /* Maintain aspect ratio */
+  height: 800px; /* Maintain aspect ratio */
   display: none; /* Initially hide all images except the first */
 }
 
