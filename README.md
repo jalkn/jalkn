@@ -1,4 +1,4 @@
-- 🌱 I got six months with programming languages such as Python, R, Java, MySQL, PHP, HTML, CSS and JavaScript.
+- 🌱 I got seven months with programming languages such as Python, R, Java, MySQL, PHP, HTML, CSS and JavaScript.
 -  🦾 Building RPA solutions 
 
 - https://jalkntoth.github.io/jalknToth/
