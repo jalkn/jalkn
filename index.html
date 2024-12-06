@@ -1,44 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>jalknToth</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Hide images outside the display area */
+}
+
+.image-container {
+  display: flex;  /* Arrange images horizontally */
+  transition: transform 0.3s ease-in-out; 
+  width: 5000%; 
+}
+
+.image-container img {
+  width: 2%; 
+  height: 100%;
+  object-fit: cover; 
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.5); /* Semi-transparent background */
+  color: white;
+  border-radius: 5px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+</style>
 </head>
 <body>
 
-  <div class="sidenav">
-    <a href="index.html"><img src="logo.png" alt=""></a>
-    <a href="#sketch1">A 1</a>
-    <a href="#sketch2">A 2</a>
-    <a href="#NZ">N Z</a>e hre
-  </div>
+<div class="container">
+  <div class="image-container" id="imageContainer">
 
-  <div class="sketch">
-    <div class="content" id="sketch1">
-      <canvas id="arcs" width="640" height="800"></canvas>
-    </div>
-    <div class="content" id="sketch2"> 
-      <canvas id="angles" width="640" height="800"></canvas>
-    </div>
-    <div class="carousel" id="NZ">
-      <img class="carousel-image" src="./img/1 0 F 1 0.png" alt="10F10">
-      <img class="carousel-image" src="./img/1 0 F J 1 0.png" alt="10FJ10">
-      <img class="carousel-image" src="./img/1 0 F W 1 0.png" alt="10FW10">
-      <img class="carousel-image" src="./img/1 0 F W 1 1.png" alt="10FW10">
-      <img class="carousel-image" src="./img/1 0 J 1 0.png" alt="10FW10">
-      <img class="carousel-image" src="./img/1 0 J 2 0.png" alt="10FW10">
-      <img class="carousel-image" src="./img/1 0 J W 1 0.png" alt="10FW10">
-      <img class="carousel-image" src="./img/1 0 U 1 0.png" alt="10FW10">
-      <img class="carousel-image" src="./img/1 0 U 1 1.png" alt="10FW10">
-      <img class="carousel-image" src="./img/1 0 U J 1 0.png" alt="10FW10">
-      <img class="carousel-image" src="./img/1 0 U W 1 0.png" alt="10FW10">
-      <img class="carousel-image" src="./img/1 0 W 1 0.png" alt="10FW10">
-    </div>
-  </div>
+    <img src="/img/1.png" alt="">
+    <img src="/img/2.png" alt="">
+    <img src="/img/3.pmg" alt="">
+    <img src="/img/4.png" alt="">
+    <img src="/img/5.png" alt="">
+    <img src="/img/6.png" alt="">
+    <img src="/img/7.pmg" alt="">
+    <img src="/img/8.png" alt="">
+    <img src="/img/9.png" alt="">
+    <img src="/img/10.png" alt="">
+    <img src="/img/11.pmg" alt="">
+    <img src="/img/12.png" alt="">
+    <img src="/img/13.png" alt="">
+    <img src="/img/14.png" alt="">
+    <img src="/img/15.pmg" alt="">
+    <img src="/img/16.png" alt="">
+    <img src="/img/17.png" alt="">
+    <img src="/img/18.png" alt="">
+    <img src="/img/19.pmg" alt="">
+    <img src="/img/20.png" alt="">
+    <img src="/img/21.png" alt="">
+    <img src="/img/22.png" alt="">
+    <img src="/img/23.pmg" alt="">
+    <img src="/img/24.png" alt="">
+    <img src="/img/25.png" alt="">
+    <img src="/img/26.png" alt="">
+    <img src="/img/27.pmg" alt="">
+    <img src="/img/28.png" alt="">
+    <img src="/img/29.png" alt="">
+    <img src="/img/30.png" alt="">
 
-  <script src="script.js"></script>
+  </div>
+  <div class="arrow prev" onclick="prevImage()">&#10094;</div>
+  <div class="arrow next" onclick="nextImage()">&#10095;</div>
+</div>
+
+
+
+<script>
+  let currentImage = 0;
+  const imageContainer = document.getElementById("imageContainer");
+  const numImages = 50;
+
+  function nextImage() {
+    currentImage = (currentImage + 1) % numImages;
+    imageContainer.style.transform = `translateX(-${currentImage * 2}%)`; // Move by 2% per image
+  }
+
+  function prevImage() {
+    currentImage = (currentImage - 1 + numImages) % numImages; // Handle wrapping around
+    imageContainer.style.transform = `translateX(-${currentImage * 2}%)`; 
+  }
+
+
+</script>
+
 </body>
 </html>
