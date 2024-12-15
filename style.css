@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.itemCarrusel{
+    border: 1px solid black;
+    height: 100%;
+    position: relative;
+}
+
+.tarjetaCarrusel{
+    background-color: rgb(8, 64, 45);
+    height: 100%;
+}
+
+.flechasCarrusel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+img{
+    width: 100%;
+    height: 700px;
+}
+
+.flechasCarrusel a>i{
+    color: white;
+    font-size: 30px;
+}
+
+#tarjeta1{
+    background-color: blue;
+}
+
+#tarjeta2{
+    background-color: aqua;
+}
+
+#tarjeta3{
+    background-color: yellowgreen;
+}
+
+#container{
+    height: 700px;
+    overflow: hidden;
+}
