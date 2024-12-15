@@ -13,6 +13,8 @@
 .tarjetaCarrusel{
     background-color: rgb(8, 64, 45);
     height: 100%;
+
+    
 }
 
 .flechasCarrusel{
@@ -28,7 +30,7 @@
 
 img{
     width: 100%;
-    height: 700px;
+    height: 100%;
 }
 
 .flechasCarrusel a>i{
@@ -36,19 +38,39 @@ img{
     font-size: 30px;
 }
 
-#tarjeta1{
-    background-color: blue;
-}
-
-#tarjeta2{
-    background-color: aqua;
-}
-
-#tarjeta3{
-    background-color: yellowgreen;
-}
-
 #container{
     height: 700px;
     overflow: hidden;
 }
+
+.logo-container {
+    width: 150px;
+    height: 150px;
+    position: relative; /* Crescent will be positioned relative to this */
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255); 
+    transform: rotate(90deg); 
+}
+/*
+.crescent {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px; 
+    height: 40px;
+    border: 2px solid rgb(255, 255, 255); 
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0; 
+}
+*/
+
+
+
