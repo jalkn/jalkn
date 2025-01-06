@@ -5,7 +5,7 @@
     <td><a href="https://jalkntoth.github.io/jourDraws/"><img src="img/jd.png" alt="journal" width="200px"></a></td>
     <td><a href="https://jalkntoth.github.io/nzTrip/"><img src="img/nz.png" alt="nzTRip" width="200px"></a></td>
     <td><a href="https://jalkntoth.github.io/norsTrip/"><img src="img/nt.png" alt="nordeste" width="200px"></a></td>
-    <td><a href="https://jalkntoth.github.io/arpApp/"><img src="img/login.png" alt="arpa" width="200px"></a></td>
+    <td><a href="https://jalkntoth.github.io/arpApp/"><img src="img/arpa.png" alt="arpa" width="200px"></a></td>
     <td><a href="https://github.com/jalkntoth/climApp"><img src="img/admin.png" alt="climApp" width="200px"></a></td>
   </tr>
 </table>
