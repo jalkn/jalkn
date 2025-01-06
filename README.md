@@ -6,6 +6,6 @@
     <td><a href="https://jalkntoth.github.io/nzTrip/"><img src="img/nz.png" alt="nzTRip" width="200px"></a></td>
     <td><a href="https://jalkntoth.github.io/norsTrip/"><img src="img/nt.png" alt="nordeste" width="200px"></a></td>
     <td><a href="https://jalkntoth.github.io/arpApp/"><img src="img/arpa.png" alt="arpa" width="200px"></a></td>
-    <td><a href="https://github.com/jalkntoth/climApp"><img src="img/cliampp.png" alt="climApp" width="200px"></a></td>
+    <td><a href="https://github.com/jalkntoth/climApp"><img src="img/climapp.png" alt="climApp" width="200px"></a></td>
   </tr>
 </table>
